@@ -1,7 +1,6 @@
 import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
-// import Navbar from "../components/Navbar";
 import { useParams } from "react-router-dom";
 
 const CoinInfo = (props) => {
@@ -20,11 +19,14 @@ const CoinInfo = (props) => {
         console.log(error);
       });
   }, []);
+  console.log(coin);
 
   return (
     <>
-      <h1 className="text-white">{coin.name}</h1>
-      <img src={coin.image.small} alt={coin.name} />
+      <div>
+        <h1 className="text-black text-2xl font-bold">{coin.name}</h1>
+        <img src={coin.image.small} alt={coin.name} />
+      </div>
     </>
   );
 };

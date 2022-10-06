@@ -1,6 +1,5 @@
 import React from "react";
 import CoinItem from "./CoinItem";
-import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 import CoinInfo from "../routes/CoinInfo";
 
