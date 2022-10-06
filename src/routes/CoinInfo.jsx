@@ -18,7 +18,7 @@ const CoinInfo = (props) => {
       .catch((error) => {
         console.log(error);
       });
-  }, []);
+  });
   console.log(coin);
 
   return (
