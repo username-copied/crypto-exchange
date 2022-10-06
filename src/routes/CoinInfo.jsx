@@ -19,7 +19,6 @@ const CoinInfo = (props) => {
         console.log(error);
       });
   });
-  console.log(coin);
 
   return (
     <>
